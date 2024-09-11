@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Presidential Votes</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    body
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: url("./imgs11/atlas-wall.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    section
+    {
+        position: relative;
+        max-width: 400px;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(55px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+    }
+    .inputbox
+    {
+        position: relative;
+        margin: 30px 0;
+        max-width: 310px;
+        border-bottom: 2px solid #ffffff;
+    }
+    .inputbox input
+    {
+        width: 100%;
+        height: 60px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        padding: 0 35px 0 5px;
+        color: #ffffff;
+    }
+    .inputbox ion-icon
+    {
+        position: absolute;
+        right: 8px;
+        color: #ffffff;
+        font-size: 1.2rem;
+        top: 20px;
+    }
+    .inputbox label
+    {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        color: #ffffff;
+        font-size: 1rem;
+        pointer-events: none;
+        transition: all 0.2s ease-in-out;
+    }
+    h1
+    {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    input:focus ~ label, input:valid ~ label
+    {
+        top: -5px;
+    }
+    button
+    {
+        width: 100%;
+        height: 40px;
+        border-radius: 40px;
+        background-color: rgb(255, 255, 255, 1);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all 0.4s ease;
+    }
+    button:hover
+    {
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .register
+    {
+        font-size: 0.9rem;
+        color: #ffffff;
+        text-align: center;
+        margin: 25px 0 10px;
+    }
+    .register p a
+    {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+    }
+    .register p a:hover
+    {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <section>
+        <form action="">
+            <h1>Вхід</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required>
+                <label for="">User</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required>
+                <label for="">Password</label>
+            </div>
+            <button>Почати</button>
+            <div class="register">
+                <p>Вперше тут: <a href="#"> Зареєструватися</a></p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
