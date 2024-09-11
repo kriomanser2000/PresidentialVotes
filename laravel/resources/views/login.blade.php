@@ -79,6 +79,10 @@
         font-size: 2rem;
         color: #ffffff;
     }
+    h1:hover
+    {
+        cursor: default;
+    }
     input:focus ~ label, input:valid ~ label
     {
         top: -5px;
@@ -107,34 +111,33 @@
         text-align: center;
         margin: 25px 0 10px;
     }
-    .register p a
+    .register p 
     {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 600;
+        color: #b1b1b1;
+        font-weight: 300;
     }
-    .register p a:hover
+    .register p:hover
     {
-        text-decoration: underline;
+        cursor: default;
     }
 </style>
 <body>
     <section>
-        <form action="">
+        <form>
             <h1>Вхід</h1>
             <div class="inputbox">
-                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon name="mailOut"></ion-icon>
                 <input type="email" required>
-                <label for="">User</label>
+                <label>Login</label>
             </div>
             <div class="inputbox">
-                <ion-icon name="lock-closed-outline"></ion-icon>
+                <ion-icon name="lockCl"></ion-icon>
                 <input type="password" required>
-                <label for="">Password</label>
+                <label>Password</label>
             </div>
             <button>Почати</button>
             <div class="register">
-                <p>Вперше тут: <a href="#"> Зареєструватися</a></p>
+                <p>"Використайте свою Електронну Пошту"</p>
             </div>
         </form>
     </section>
